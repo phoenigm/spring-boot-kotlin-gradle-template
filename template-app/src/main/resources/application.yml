@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    username: ""
+    password: ""
+    url: ""
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    open-in-view: false
+server:
+  port: ${PORT:20000}

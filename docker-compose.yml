@@ -1,0 +1,37 @@
+version: '3'
+
+services:
+
+  template-app:
+    container_name: template-app
+    restart: always
+    build:
+      context: ./template-app
+    hostname: template-app
+    ports:
+      - 20000:20000
+    networks:
+      - backend
+
+  db-template-app:
+    container_name: template-app
+    restart: always
+    image: postgres:12.2-alpine
+    hostname: template-app
+    volumes:
+      - db-template-app:/var/lib/postgresql/data:delegated
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=template-app
+      - POSTGRES_PASSWORD=template-app
+      - POSTGRES_DB=template-app
+    networks:
+      - backend
+
+networks:
+  backend:
+  frontend:
+
+volumes:
+  db-template-app:
