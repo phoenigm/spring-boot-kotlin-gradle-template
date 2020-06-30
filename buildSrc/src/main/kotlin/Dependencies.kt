@@ -1,21 +1,18 @@
 object Vers {
-    const val kotlin = "1.3.61"
+    const val kotlin = "1.3.72"
 
-    const val springBoot = "2.2.5.RELEASE"
+    const val springBoot = "2.3.1.RELEASE"
     const val springCloud = "Hoxton.SR1"
     const val springR2dbc = "0.1.0.M3"
 
-    const val postgres = "42.2.9"
-    const val postgresR2dbc = "0.8.1.RELEASE"
-    const val liquibase = "3.8.5"
+    const val postgres = "42.2.14"
+    const val postgresR2dbc = "0.8.3.RELEASE"
+    const val liquibase = "3.10.0"
 
-    const val reactorTest = "3.3.2.RELEASE"
-    const val jacksonKotlin = "2.10.3"
+    const val reactorTest = "3.3.7.RELEASE"
+    const val jacksonKotlin = "2.11.1"
     const val jaxb = "2.3.1"
     const val swagger = "3.0.0-SNAPSHOT"
-    const val halExplorer = "3.2.5.RELEASE"
-    const val hateoas = "1.0.3.RELEASE"
-    const val restDocs = "2.0.4.RELEASE"
 
     const val springSecurityOauth = "5.3.0.RELEASE"
 }
@@ -29,8 +26,6 @@ object Libs {
     const val springDataJpa = "org.springframework.boot:spring-boot-starter-data-jpa:${Vers.springBoot}"
     const val springWebflux = "org.springframework.boot:spring-boot-starter-webflux:${Vers.springBoot}"
     const val springZookeeper = "org.springframework.cloud:spring-cloud-starter-zookeeper-discovery:${Vers.springBoot}"
-    const val springMongoDbReactive =
-        "org.springframework.boot:spring-boot-starter-data-mongodb-reactive:${Vers.springBoot}"
     const val springConfigProcessor = "org.springframework.boot:spring-boot-configuration-processor:${Vers.springBoot}"
 
     const val springTest = "org.springframework.boot:spring-boot-starter-test:${Vers.springBoot}"
@@ -50,8 +45,6 @@ object Libs {
     const val springWeb = "org.springframework.boot:spring-boot-starter-web:${Vers.springBoot}"
     const val springHateoas = "org.springframework.boot:spring-boot-starter-hateoas:${Vers.springBoot}"
     const val springDataRest = "org.springframework.boot:spring-boot-starter-data-rest:${Vers.springBoot}"
-    const val springHalExplorer = "org.springframework.data:spring-data-rest-hal-explorer:${Vers.halExplorer}"
-    const val springRestDocs = "org.springframework.restdocs:spring-restdocs-mockmvc:${Vers.restDocs}"
 
     const val springSecurity = "org.springframework.boot:spring-boot-starter-security:${Vers.springBoot}"
     const val springSecurityAuto =
