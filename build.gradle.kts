@@ -2,9 +2,9 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 buildscript {
     repositories {
+        mavenCentral()
         jcenter()
         gradlePluginPortal()
-        mavenCentral()
     }
     dependencies {
         classpath(Libs.kotlinStdlib)
@@ -14,7 +14,7 @@ buildscript {
 plugins {
     kotlin("jvm") version Vers.kotlin apply false
     id("org.springframework.boot") version Vers.springBoot
-    id("io.spring.dependency-management") version "1.0.9.RELEASE"
+    id("io.spring.dependency-management") version "1.0.11.RELEASE"
     kotlin("plugin.spring") version Vers.kotlin
 }
 

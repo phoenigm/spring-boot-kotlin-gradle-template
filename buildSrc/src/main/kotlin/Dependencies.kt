@@ -1,20 +1,17 @@
 object Vers {
-    const val kotlin = "1.3.72"
+    const val kotlin = "1.4.20"
 
-    const val springBoot = "2.3.1.RELEASE"
-    const val springCloud = "Hoxton.SR1"
-    const val springR2dbc = "0.1.0.M3"
+    const val springBoot = "2.4.2"
 
-    const val postgres = "42.2.14"
+    const val postgres = "42.2.18"
     const val postgresR2dbc = "0.8.3.RELEASE"
-    const val liquibase = "3.10.0"
+    const val liquibase = "4.2.2"
 
-    const val reactorTest = "3.3.7.RELEASE"
-    const val jacksonKotlin = "2.11.1"
+    const val reactorTest = "3.4.2"
+    const val jacksonKotlin = "2.12.1"
     const val jaxb = "2.3.1"
-    const val swagger = "3.0.0-SNAPSHOT"
+    const val swagger = "3.0.0"
 
-    const val springSecurityOauth = "5.3.0.RELEASE"
 }
 
 object Libs {
@@ -22,10 +19,8 @@ object Libs {
     const val kotlinReflect = "org.jetbrains.kotlin:kotlin-reflect:${Vers.kotlin}"
     const val kotlinJdk8 = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${Vers.kotlin}"
 
-    const val springR2dbc = "org.springframework.boot.experimental:spring-boot-starter-data-r2dbc:${Vers.springR2dbc}"
     const val springDataJpa = "org.springframework.boot:spring-boot-starter-data-jpa:${Vers.springBoot}"
     const val springWebflux = "org.springframework.boot:spring-boot-starter-webflux:${Vers.springBoot}"
-    const val springZookeeper = "org.springframework.cloud:spring-cloud-starter-zookeeper-discovery:${Vers.springBoot}"
     const val springConfigProcessor = "org.springframework.boot:spring-boot-configuration-processor:${Vers.springBoot}"
 
     const val springTest = "org.springframework.boot:spring-boot-starter-test:${Vers.springBoot}"
@@ -46,9 +41,4 @@ object Libs {
     const val springHateoas = "org.springframework.boot:spring-boot-starter-hateoas:${Vers.springBoot}"
     const val springDataRest = "org.springframework.boot:spring-boot-starter-data-rest:${Vers.springBoot}"
 
-    const val springSecurity = "org.springframework.boot:spring-boot-starter-security:${Vers.springBoot}"
-    const val springSecurityAuto =
-        "org.springframework.security.oauth.boot:spring-security-oauth2-autoconfigure:${Vers.springBoot}"
-    const val springSecurityOauth =
-        "org.springframework.security:spring-security-oauth2-client:${Vers.springSecurityOauth}"
 }
