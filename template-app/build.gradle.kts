@@ -1,14 +1,7 @@
 plugins {
     kotlin("jvm")
-    id("org.springframework.boot")
+    id("org.springframework.boot") version Vers.springBoot
     id("org.jetbrains.kotlin.plugin.noarg") version Vers.kotlin
-}
-
-repositories {
-    mavenCentral()
-    jcenter()
-    maven(url = "https://repo.spring.io/milestone/")
-    maven(url = "http://oss.jfrog.org/artifactory/oss-snapshot-local/")
 }
 
 dependencies {
