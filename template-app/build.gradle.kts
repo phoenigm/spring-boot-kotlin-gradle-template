@@ -1,7 +1,6 @@
 plugins {
     kotlin("jvm")
     id("org.springframework.boot") version Vers.springBoot
-    id("org.jetbrains.kotlin.plugin.noarg") version Vers.kotlin
 }
 
 dependencies {

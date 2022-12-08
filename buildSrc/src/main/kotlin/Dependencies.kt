@@ -1,12 +1,12 @@
 object Vers {
-    const val kotlin = "1.6.10"
+    const val kotlin = "1.7.22"
 
-    const val springBoot = "2.6.4"
+    const val springBoot = "3.0.0"
 
-    const val postgres = "42.3.3"
-    const val liquibase = "4.8.0"
+    const val postgres = "42.5.1"
+    const val liquibase = "4.17.2"
 
-    const val jacksonKotlin = "2.13.1"
+    const val jacksonKotlin = "2.14.1"
     const val jaxb = "2.3.1"
     const val swagger = "3.0.0"
 }
