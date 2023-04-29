@@ -1,20 +1,22 @@
 object Vers {
-    const val kotlin = "1.7.22"
+    const val kotlin = "1.8.20"
 
-    const val springBoot = "3.0.0"
+    const val springBoot = "3.0.6"
 
-    const val postgres = "42.5.1"
-    const val liquibase = "4.17.2"
+    const val postgres = "42.6.0"
+    const val liquibase = "4.21.1"
 
-    const val jacksonKotlin = "2.14.1"
-    const val jaxb = "2.3.1"
-    const val swagger = "3.0.0"
+    const val jacksonKotlin = "2.15.0"
+    const val springDoc = "2.1.0"
+
+    const val testContainers = "1.18.0"
+    const val junit = "5.9.3"
+    const val mockk = "1.13.5"
 }
 
 object Libs {
     const val kotlinStdlib = "org.jetbrains.kotlin:kotlin-stdlib:${Vers.kotlin}"
     const val kotlinReflect = "org.jetbrains.kotlin:kotlin-reflect:${Vers.kotlin}"
-    const val kotlinJdk8 = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${Vers.kotlin}"
 
     const val springTest = "org.springframework.boot:spring-boot-starter-test:${Vers.springBoot}"
 
@@ -22,10 +24,13 @@ object Libs {
     const val postgres = "org.postgresql:postgresql:${Vers.postgres}"
     const val liquibase = "org.liquibase:liquibase-core:${Vers.liquibase}"
 
-    const val jaxb = "javax.xml.bind:jaxb-api:${Vers.jaxb}"
-    const val swagger = "io.springfox:springfox-swagger2:${Vers.swagger}"
-    const val swaggerUi = "io.springfox:springfox-swagger-ui:${Vers.swagger}"
+    const val springDoc = "org.springdoc:springdoc-openapi-starter-webmvc-ui:${Vers.springDoc}"
 
     const val springWeb = "org.springframework.boot:spring-boot-starter-web:${Vers.springBoot}"
+    const val springValidation = "org.springframework.boot:spring-boot-starter-validation:${Vers.springBoot}"
 
+    const val testContainers = "org.testcontainers:testcontainers:${Vers.testContainers}"
+    const val testContainersPostgres = "org.testcontainers:postgresql:${Vers.testContainers}"
+    const val junit = "org.junit.jupiter:junit-jupiter-api:${Vers.junit}"
+    const val mockk = "io.mockk:mockk:${Vers.mockk}"
 }

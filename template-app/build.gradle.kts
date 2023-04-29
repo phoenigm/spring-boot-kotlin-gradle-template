@@ -6,11 +6,8 @@ plugins {
 dependencies {
     implementation(Libs.kotlinStdlib)
     implementation(Libs.kotlinReflect)
-    implementation(Libs.kotlinJdk8)
-    runtimeOnly(Libs.jaxb)
 
-    implementation(Libs.swagger)
-    implementation(Libs.swaggerUi)
+    implementation(Libs.springDoc)
     implementation(Libs.jacksonKotlin)
 
     implementation(Libs.springWeb)
@@ -18,4 +15,9 @@ dependencies {
     testImplementation(Libs.springTest) {
         exclude("org.junit.vintage", "junit-vintage-engine")
     }
+
+    testImplementation(Libs.junit)
+    testImplementation(Libs.mockk)
+    testImplementation(Libs.testContainers)
+    testImplementation(Libs.testContainersPostgres)
 }
