@@ -3,12 +3,12 @@
 Start your Spring Boot application with this template.
 
 Requirements:
-* Java 17
+* Java 21
 
 Main dependencies:
-* Kotlin 1.8.20
-* Spring Boot 3.0.6
-* Postgres 42.6.0
+* Kotlin 2.1.20
+* Spring Boot 3.4.5
+* Postgres 42.7.5
 
 ## Steps to remove template's tailings
 1) Replace all occurrences 'template-app' with name of your application

@@ -1,17 +1,17 @@
 object Vers {
-    const val kotlin = "1.8.20"
+    const val kotlin = "2.1.20"
 
-    const val springBoot = "3.0.6"
+    const val springBoot = "3.4.5"
 
-    const val postgres = "42.6.0"
-    const val liquibase = "4.21.1"
+    const val postgres = "42.7.5"
+    const val liquibase = "4.31.1"
 
-    const val jacksonKotlin = "2.15.0"
-    const val springDoc = "2.1.0"
+    const val jacksonKotlin = "2.19.0"
+    const val springDoc = "2.8.6"
 
-    const val testContainers = "1.18.0"
-    const val junit = "5.9.3"
-    const val mockk = "1.13.5"
+    const val testContainers = "1.21.0"
+    const val junit = "5.12.2"
+    const val mockk = "1.14.0"
 }
 
 object Libs {

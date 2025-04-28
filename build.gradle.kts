@@ -1,4 +1,14 @@
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+plugins {
+    kotlin("jvm") version Vers.kotlin
+}
+
+repositories {
+    mavenCentral()
+}
+
+kotlin {
+    jvmToolchain(21)
+}
 
 subprojects {
     group = "com.example.template"
@@ -8,11 +18,6 @@ subprojects {
     }
 
     tasks {
-        withType<KotlinCompile> {
-            kotlinOptions.jvmTarget = "17"
-            kotlinOptions.allWarningsAsErrors = true
-        }
-
         withType<Test> {
             useJUnitPlatform()
         }
