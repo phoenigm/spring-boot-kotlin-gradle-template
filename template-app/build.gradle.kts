@@ -1,6 +1,6 @@
 plugins {
     kotlin("jvm")
-    alias(libs.plugins.spring.boot) apply false
+    alias(libs.plugins.spring.boot)
 }
 
 dependencies {
