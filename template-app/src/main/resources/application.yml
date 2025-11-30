@@ -9,5 +9,12 @@ spring:
       ddl-auto: update
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     open-in-view: false
+
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
+
 server:
-  port: ${PORT:20000}
+  port: 20000

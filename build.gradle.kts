@@ -1,13 +1,9 @@
 plugins {
-    kotlin("jvm") version Vers.kotlin
+    alias(libs.plugins.kotlin.jvm) apply false
 }
 
 repositories {
     mavenCentral()
-}
-
-kotlin {
-    jvmToolchain(21)
 }
 
 subprojects {
