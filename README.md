@@ -1,14 +1,14 @@
-# Spring Boot Kotlin Gradle template
+# Spring Boot Kotlin Gradle template (java 25, spring 4)
 
 Start your Spring Boot application with this template.
 
 Requirements:
-* Java 21
+* Java 25
 
 Main dependencies:
-* Kotlin 2.1.20
-* Spring Boot 3.4.5
-* Postgres 42.7.5
+* Kotlin 2.3.0-RC
+* Spring Boot 4.0.0
+* Postgres 42.7.8
 
 ## Steps to remove template's tailings
 1) Replace all occurrences 'template-app' with name of your application

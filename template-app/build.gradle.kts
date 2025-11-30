@@ -1,23 +1,25 @@
 plugins {
     kotlin("jvm")
-    id("org.springframework.boot") version Vers.springBoot
+    alias(libs.plugins.spring.boot) apply false
 }
 
 dependencies {
-    implementation(Libs.kotlinStdlib)
-    implementation(Libs.kotlinReflect)
+    implementation(libs.kotlin.stdlib)
+    implementation(libs.kotlin.reflect)
 
-    implementation(Libs.springDoc)
-    implementation(Libs.jacksonKotlin)
+    implementation(libs.springdoc.openapi)
+    implementation(libs.jackson.kotlin)
 
-    implementation(Libs.springWeb)
+    implementation(libs.spring.web)
+    implementation(libs.spring.validation)
 
-    testImplementation(Libs.springTest) {
+    testImplementation(libs.spring.test) {
         exclude("org.junit.vintage", "junit-vintage-engine")
     }
 
-    testImplementation(Libs.junit)
-    testImplementation(Libs.mockk)
-    testImplementation(Libs.testContainers)
-    testImplementation(Libs.testContainersPostgres)
+    testRuntimeOnly(libs.junit.platform.launcher)
+    testImplementation(libs.junit)
+    testImplementation(libs.mockk)
+    testImplementation(libs.testcontainers)
+    testImplementation(libs.testcontainers.postgres)
 }

@@ -1,0 +1,37 @@
+[versions]
+kotlin = "2.3.0-RC"
+spring-boot = "4.0.0"
+postgres = "42.7.8"
+liquibase = "5.0.1"
+jackson-kotlin = "3.0.3"
+spring-doc = "3.0.0"
+test-containers = "2.0.2"
+test-containers-postgres = "1.21.3"
+junit = "6.0.1"
+mockk = "1.14.6"
+
+[libraries]
+kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin" }
+kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect", version.ref = "kotlin" }
+
+spring-test = { module = "org.springframework.boot:spring-boot-starter-test", version.ref = "spring-boot" }
+
+jackson-kotlin = { module = "tools.jackson.module:jackson-module-kotlin", version.ref = "jackson-kotlin" }
+postgres = { module = "org.postgresql:postgresql", version.ref = "postgres" }
+liquibase = { module = "org.liquibase:liquibase-core", version.ref = "liquibase" }
+
+springdoc-openapi = { module = "org.springdoc:springdoc-openapi-starter-webmvc-ui", version.ref = "spring-doc" }
+
+spring-web = { module = "org.springframework.boot:spring-boot-starter-web", version.ref = "spring-boot" }
+spring-validation = { module = "org.springframework.boot:spring-boot-starter-validation", version.ref = "spring-boot" }
+
+testcontainers = { module = "org.testcontainers:testcontainers", version.ref = "test-containers" }
+testcontainers-postgres = { module = "org.testcontainers:postgresql", version.ref = "test-containers-postgres" }
+
+junit = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junit" }
+junit-platform-launcher = { module = "org.junit.platform:junit-platform-launcher", version.ref = "junit" }
+mockk = { module = "io.mockk:mockk", version.ref = "mockk" }
+
+[plugins]
+spring-boot = { id = "org.springframework.boot", version.ref = "spring-boot" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
